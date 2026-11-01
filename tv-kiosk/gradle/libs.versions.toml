@@ -1,9 +1,8 @@
 [versions]
-agp          = "9.2.1"
-kotlin       = "2.2.10"
-coreKtx      = "1.13.1"
-appcompat    = "1.7.0"
-webkit       = "1.11.0"
+agp          = "9.5.0"
+coreKtx      = "1.19.1"
+appcompat    = "1.8.0"
+webkit       = "1.18.0"
 
 [libraries]
 androidx-core-ktx  = { group = "androidx.core",        name = "core-ktx",  version.ref = "coreKtx"  }
@@ -12,4 +11,3 @@ androidx-webkit    = { group = "androidx.webkit",      name = "webkit",    versi
 
 [plugins]
 android-application = { id = "com.android.application",       version.ref = "agp"    }
-kotlin-android      = { id = "org.jetbrains.kotlin.android",  version.ref = "kotlin" }
