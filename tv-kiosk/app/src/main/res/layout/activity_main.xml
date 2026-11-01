@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!--
+        The main WebView filling the entire screen.
+        focusable + focusableInTouchMode lets the WebView capture D-pad
+        and remote control key events properly.
+    -->
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <!--
+        Hidden overlay used by WebChromeClient when the page requests
+        native fullscreen (e.g. HTML5 <video> going fullscreen).
+        Sits on top of the WebView; only made visible during fullscreen video.
+    -->
+    <FrameLayout
+        android:id="@+id/fullscreen_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

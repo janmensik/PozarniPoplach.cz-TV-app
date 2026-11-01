@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PožárníPoplach.cz</string>
+
+    <!--
+        ══════════════════════════════════════════
+        CHANGE THIS URL TO UPDATE THE KIOSK PAGE
+        ══════════════════════════════════════════
+    -->
+    <string name="kiosk_url">https://alarm.pozarnipoplach.cz</string>
+
+    <!-- How long (ms) to wait before retrying after a page load error -->
+    <string name="retry_delay_ms">5000</string>
+</resources>

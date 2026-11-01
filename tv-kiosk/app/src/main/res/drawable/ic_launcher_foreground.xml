@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Adaptive icon foreground — flame from favicon.svg.
+    The path coordinates are scaled from the original 32×32 viewBox
+    into the 108dp adaptive icon canvas (safe zone is the centre 72dp).
+    We scale by ×3.375 (108/32) so the flame sits within the safe zone.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer flame — red (#F80000) -->
+    <!-- Original path scaled ×3.375: M16 5 → M54 16.875, etc. -->
+    <path
+        android:fillColor="#F80000"
+        android:pathData="M54,16.875
+            C54,16.875 30.375,43.875 30.375,67.5
+            C30.375,80.297 40.953,90.563 54,90.563
+            C67.047,90.563 77.625,80.297 77.625,67.5
+            C77.625,43.875 54,16.875 54,16.875Z" />
+
+    <!-- Inner flame — gold (#f8bd2a) -->
+    <path
+        android:fillColor="#f8bd2a"
+        android:pathData="M54,43.875
+            C54,43.875 40.5,57.375 40.5,70.875
+            C40.5,78.457 46.418,84.375 54,84.375
+            C61.582,84.375 67.5,78.457 67.5,70.875
+            C67.5,57.375 54,43.875 54,43.875Z" />
+
+    <!-- Subtle glow ring -->
+    <path
+        android:fillColor="#F80000"
+        android:fillAlpha="0.25"
+        android:pathData="M54,70.875
+            m-27,0
+            a27,27 0 1,0 54,0
+            a27,27 0 1,0 -54,0Z" />
+
+</vector>

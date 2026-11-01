@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background with slight rounding for tactical look -->
+  <rect width="32" height="32" rx="4" fill="#09151a"/>
+  
+  <!-- Outer Flame (Primary Red) -->
+  <path d="M16 5C16 5 9 13 9 20C9 23.866 12.134 27 16 27C19.866 27 23 23.866 23 20C23 13 16 5 16 5Z" fill="#F80000"/>
+  
+  <!-- Inner Flame (Secondary Gold/Yellow) -->
+  <path d="M16 13C16 13 12 17 12 21C12 23.2091 13.7909 25 16 25C18.2091 25 20 23.2091 20 21C20 17 16 13 16 13Z" fill="#f8bd2a"/>
+  
+  <!-- Glow Effect (Optional/Subtle) -->
+  <circle cx="16" cy="20" r="8" fill="url(#glow)" opacity="0.3"/>
+  
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#F80000" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#F80000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
